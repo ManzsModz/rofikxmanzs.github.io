@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Panel Bot</title>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body, html {
+      height: 100%;
+      background: #0f2027;
+    }
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+      z-index: -1;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 1em;
+      position: fixed;
+      width: 100%;
+      z-index: 2;
+    }
+    nav button {
+      background: #00c6ff;
+      color: white;
+      border: none;
+      margin: 0 1em;
+      padding: 0.5em 1.5em;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    nav button:hover {
+      background: #0072ff;
+    }
+    .page {
+      display: none;
+      min-height: 100vh;
+      padding: 5em 2em 2em;
+      color: white;
+      text-align: center;
+    }
+    .active {
+      display: block;
+    }
+    .whatsapp-btn {
+      margin-top: 1em;
+      background: #25D366;
+      border: none;
+      padding: 0.8em 1.5em;
+      font-size: 1em;
+      border-radius: 30px;
+      cursor: pointer;
+      color: white;
+      transition: transform 0.2s ease;
+    }
+    .whatsapp-btn:hover {
+      transform: scale(1.05);
+    }
+    .produk-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1em;
+      margin-top: 2em;
+    }
+    .produk-card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 1em;
+      border-radius: 10px;
+      width: 200px;
+    }
+    .produk-card h3,
+    .produk-card p {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<div id="particles-js"></div>
+
+<nav>
+  <button onclick="showPage('home')">Home</button>
+  <button onclick="showPage('produk')">Produk</button>
+  <button onclick="showPage('kontak')">Kontak</button>
+</nav>
+
+<div id="home" class="page active">
+  <h1>Selamat Datang Di Website Pembelian Panel Bot</h1>
+  <p>Ingin Membeli Panel Untuk Pasang Bot langsung Pilih Menu Produk</p>
+</div>
+
+<div id="produk" class="page">
+  <h1>Produk Kami</h1>
+  <p>Beli Panel Sesuai Dana:</p>
+  <div class="produk-container">
+
+    <div class="produk-card">
+      <h3>Panel 1GB</h3>
+      <p>RAM 1gb</p>
+      <p>CPU 40%</p>
+      <button class="whatsapp-btn" onclick="location.href='https://wa.me/6283169687238?text=Halo,%20saya%20ingin%20membeli%20panel%20bot%201GB'">Beli Panel 1GB</button>
+    </div>
+    <div class="produk-card">
+      <h3>Panel 2GB</h3>
+      <p>RAM 2gb</p>
+      <p>CPU 60%</p>
+      <button class="whatsapp-btn" onclick="location.href='https://wa.me/6283169687238?text=Halo,%20saya%20ingin%20membeli%20panel%20bot%202GB'">Beli Panel 2GB</button>
+    </div>
+    <div class="produk-card">
+      <h3>Panel 3GB</h3>
+      <p>RAM 3gb</p>
+      <p>CPU 80%</p>
+      <button class="whatsapp-btn" onclick="location.href='https://wa.me/6283169687238?text=Halo,%20saya%20ingin%20membeli%20panel%20bot%203GB'">Beli Panel 3GB</button>
+    </div>
+    <div class="produk-card">
+      <h3>Panel 4GB</h3>
+      <p>RAM 4gb</p>
+      <p>CPU 100%</p>
+      <button class="whatsapp-btn" onclick="location.href='https://wa.me/6283169687238?text=Halo,%20saya%20ingin%20membeli%20panel%20bot%204GB'">Beli Panel 4GB</button>
+    </div>
+    <div class="produk-card">
+      <h3>Panel 5GB</h3>
+      <p>RAM 5gb</p>
+      <p>CPU 120%</p>
+      <button class="whatsapp-btn" onclick="location.href='https://wa.me/6283169687238?text=Halo,%20saya%20ingin%20membeli%20panel%20bot%206GB'">Beli Panel 5GB</button>
+    </div>
+    <div class="produk-card">
+      <h3>Panel 6GB</h3>
+      <p>RAM 6gb</p>
+      <p>CPU 140%</p>
+      <button class="whatsapp-btn" onclick="location.href='https://wa.me/6283169687238?text=Halo,%20saya%20ingin%20membeli%20panel%20bot%206GB'">Beli Panel 6GB</button>
+    </div>
+    <div class="produk-card">
+      <h3>Panel 7GB</h3>
+      <p>RAM 7gb</p>
+      <p>CPU 160%</p>
+      <button class="whatsapp-btn" onclick="location.href='https://wa.me/6283169687238?text=Halo,%20saya%20ingin%20membeli%20panel%20bot%207GB'">Beli Panel 7GB</button>
+    </div>
+    <div class="produk-card">
+      <h3>Panel 8GB</h3>
+      <p>RAM 8gb</p>
+      <p>CPU 180%</p>
+      <button class="whatsapp-btn" onclick="location.href='https://wa.me/6283169687238?text=Halo,%20saya%20ingin%20membeli%20panel%20bot%208GB'">Beli Panel 8GB</button>
+    </div>
+    <div class="produk-card">
+      <h3>Panel 9GB</h3>
+      <p>RAM 9gb</p>
+      <p>CPU 200%</p>
+      <button class="whatsapp-btn" onclick="location.href='https://wa.me/6283169687238?text=Halo,%20saya%20ingin%20membeli%20panel%20bot%209GB'">Beli Panel 9GB</button>
+    </div>
+    <div class="produk-card">
+      <h3>Panel 10GB</h3>
+      <p>RAM 10gb</p>
+      <p>CPU 220%</p>
+      <button class="whatsapp-btn" onclick="location.href='https://wa.me/6283169687238?text=Halo,%20saya%20ingin%20membeli%20panel%20bot%2010GB'">Beli Panel 10GB</button>
+    </div>
+    <div class="produk-card">
+      <h3>Panel Unlimited</h3>
+      <p>RAM Unlimited</p>
+      <p>CPU Unlimited</p>
+      <button class="whatsapp-btn" onclick="location.href='https://wa.me/6283169687238?text=Halo,%20saya%20ingin%20membeli%20panel%20bot%20Unlimited'">Beli Panel Unlimited</button>
+    </div>
+    <div class="produk-card">
+      <h3>Panel Pterodactyl</h3>
+      <p>RAM Pterodactyl</p>
+      <p>CPU Pterodactyl</p>
+      <button class="whatsapp-btn" onclick="location.href='https://wa.me/6283169687238?text=Halo,%20saya%20ingin%20membeli%20panel%20bot%20Pterodactyl'">Beli Panel Pterodactyl</button>
+    </div>
+  </div>
+</div>
+
+<div id="kontak" class="page">
+  <h1>Big Thanks</h1>
+  <p1>Thank you for purchasing our product</p1>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+  particlesJS('particles-js', {
+    particles: {
+      number: { value: 80 },
+      color: { value: "#ffffff" },
+      shape: { type: "circle" },
+      opacity: { value: 0.5 },
+      size: { value: 3 },
+      line_linked: {
+        enable: true,
+        distance: 150,
+        color: "#ffffff",
+        opacity: 0.4,
+        width: 1
+      },
+      move: {
+        enable: true,
+        speed: 3,
+        direction: "none",
+        out_mode: "bounce"
+      }
+    }
+  });
+
+  function showPage(pageId) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.getElementById(pageId).classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+
+</body>
+</html>
